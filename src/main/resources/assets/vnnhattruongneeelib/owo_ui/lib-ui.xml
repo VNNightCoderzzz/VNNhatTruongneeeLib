@@ -1,0 +1,52 @@
+<owo-ui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/wisp-forest/owo-lib/main/owo-ui.xsd">
+    <components>
+        <flow-layout direction="vertical">
+            <children>
+                <label>
+                    <text>§b§lVNNhatTruongneeeLib</text>
+                    <shadow>true</shadow>
+                </label>
+                
+                <label>
+                    <text>§7Registered Modules</text>
+                    <margins top="2" bottom="10"/>
+                </label>
+                
+                <scroll direction="vertical">
+                    <flow-layout direction="vertical" id="mod-list-content">
+                        <children>
+                            </children>
+                        <padding>
+                            <all>5</all>
+                        </padding>
+                        <horizontal-alignment>center</horizontal-alignment>
+                        <sizing>
+                            <vertical method="content"/>
+                            <horizontal method="fill">100</horizontal>
+                        </sizing>
+                    </flow-layout>
+
+                    <sizing>
+                        <vertical method="fill">100</vertical>
+                        <horizontal method="fill">100</horizontal>
+                    </sizing>
+                </scroll>
+            </children>
+
+            <surface>
+                <flat>
+                    <color>#121212</color>
+                </flat>
+            </surface>
+            
+            <padding>
+                <all>15</all>
+            </padding>
+            <width>50%</width>
+            <height>65%</height>
+            <vertical-alignment>center</vertical-alignment>
+            <horizontal-alignment>center</horizontal-alignment>
+        </flow-layout>
+    </components>
+</owo-ui>

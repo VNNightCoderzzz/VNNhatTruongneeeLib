@@ -1,0 +1,45 @@
+// Copyright (c) 2026 VNNhatTruongneee. Licensed under CC-BY-NC-SA 4.0.
+
+
+plugins {
+    id 'fabric-loom' version '1.15-SNAPSHOT'
+    id 'maven-publish'
+}
+
+version = "0.10.2"
+group = "net.vnnhattruongneee"
+
+repositories {
+    maven { url 'https://maven.wispforest.io' }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:1.21"
+    mappings "net.fabricmc:yarn:1.21+build.2:v2"
+    modImplementation "net.fabricmc:fabric-loader:0.18.2"
+
+
+    modImplementation "io.wispforest:owo-lib:0.12.15.4+1.21"
+    include "io.wispforest:owo-lib:0.12.15.4+1.21"
+}
+
+processResources {
+    inputs.property "version", project.version
+    filesMatching("fabric.mod.json") { expand "version": project.version }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.release = 21
+}
+
+java {
+    withSourcesJar()
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+loom {
+    mixin {
+        defaultRefmapName = "vnnhattruongneeelib-refmap.json"
+    }
+}

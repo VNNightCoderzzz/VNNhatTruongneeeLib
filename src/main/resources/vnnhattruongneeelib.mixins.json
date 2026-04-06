@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.vnnhattruongneee.vnnhattruongneeelib.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "vnnhattruongneeelib-refmap.json",
+  "mixins": [
+    "MixinUI"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

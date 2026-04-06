@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "modtest",
+  "version": "${version}",
+  "name": "Mod Test",
+  "description": "Testing VNNhatTruongneeeLib Integration",
+  "authors": [ "VNNhatTruongneee" ],
+  "contact": { "homepage": "https://vnnightcoderzzz.github.io/" },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [ "net.vnnhattruongneee.modtest.ModTest" ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": ">=1.21",
+    "vnnhattruongneeelib": ">=0.10.2",
+    "owo": "*"
+  }
+}
