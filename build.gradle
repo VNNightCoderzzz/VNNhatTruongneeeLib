@@ -19,7 +19,7 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:0.18.2"
 
 
-    modImplementation "io.wispforest:owo-lib:0.12.15.4+1.21"
+    api "io.wispforest:owo-lib:0.12.15.4+1.21"
     include "io.wispforest:owo-lib:0.12.15.4+1.21"
 }
 
